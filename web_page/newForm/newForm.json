@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.26",
   "id" : "newForm",
   "name" : "newForm",
-  "lastUpdate" : 1573064633338,
+  "lastUpdate" : 1573070697898,
   "rows" : [
     [
       {
@@ -134,7 +134,7 @@
     ],
     [
       {
-        "type" : "component",
+        "type" : "container",
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
@@ -150,69 +150,118 @@
             "type" : "constant",
             "value" : false
           },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "headers" : {
-            "type" : "constant",
-            "value" : [
-              "Id",
-              "Received On"
-            ]
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "Variable"
-          },
-          "apiUrl" : {
-            "type" : "constant",
-            "value" : "../API/"
-          },
-          "params" : {
-            "type" : "constant"
-          },
-          "content" : {
-            "type" : "constant",
-            "value" : "orders"
-          },
-          "columnsKey" : {
-            "type" : "constant",
-            "value" : [
-              "id",
-              "receivedOn"
-            ]
-          },
-          "sortColumns" : {
-            "type" : "constant"
-          },
-          "selectedRow" : {
+          "repeatedCollection" : {
             "type" : "variable",
-            "value" : ""
-          },
-          "pageSize" : {
-            "type" : "constant",
-            "value" : 10
-          },
-          "filter" : {
-            "type" : "constant"
-          },
-          "striped" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "condensed" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "bordered" : {
-            "type" : "constant",
-            "value" : false
+            "value" : "orders"
           }
         },
-        "reference" : "88d459f9-b18e-4ab8-9d4c-abd09879e489",
+        "reference" : "77a44f19-cf7b-4543-a411-f850b55a757d",
         "hasValidationError" : false,
-        "id" : "pbDataTable"
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 2,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "ID"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{$item.id}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "a12748af-aed9-440d-bc48-44ca32b4fab5",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 10,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Received On"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{$item.receivedOn}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "eb3a2bba-df5f-43c1-935a-561adb1aa7fe",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            }
+          ]
+        ]
       }
     ],
     [
@@ -270,7 +319,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Acknowledge"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -316,6 +365,29 @@
                   "class" : {
                     "type" : "constant",
                     "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "b96d55d9-67ff-453a-93a6-2675f9fb4a3b",
