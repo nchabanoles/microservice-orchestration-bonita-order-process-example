@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.10.0.beta-02">
+    <businessObjects>
+        <businessObject qualifiedName="com.acme.ordermanagement.Orders">
+            <description>Online customer orders for goods to be shipped.</description>
+            <fields>
+                <field type="STRING" length="255" name="id" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="receivedOn" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
