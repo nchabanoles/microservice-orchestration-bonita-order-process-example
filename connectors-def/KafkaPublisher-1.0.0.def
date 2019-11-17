@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>KafkaPublisher</id>
+  <version>1.0.0</version>
+  <icon>kafka-logo-icon.png</icon>
+  <category icon="messaging.png" id="messaging"/>
+  <input defaultValue="localhost:9092" mandatory="true" name="kafka_brokers" type="java.lang.String"/>
+  <input mandatory="true" name="kafka_topics" type="java.lang.String"/>
+  <input mandatory="true" name="record" type="java.util.List"/>
+  <page id="PublishTo">
+    <widget xsi:type="definition:Text" id="brokerURLWidget" inputName="kafka_brokers"/>
+    <widget xsi:type="definition:Text" id="topicsWidget" inputName="kafka_topics"/>
+    <widget xsi:type="definition:Array" id="recordWidget" inputName="record" cols="2">
+      <colsCaption>Key</colsCaption>
+      <colsCaption>Value</colsCaption>
+    </widget>
+  </page>
+</definition:ConnectorDefinition>

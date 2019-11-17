@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>KafkaPublisher-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>KafkaPublisher</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.bonitasoft.connector.KafkaPublisherImpl</implementationClassname>
+  <description>Publish a record to a Kafka topics.
+A Record is a Key-Value pair. It contains the topic name and partition number to be sent.</description>
+  <jarDependencies>
+    <jarDependency>kafka-clients-2.3.1.jar</jarDependency>
+  </jarDependencies>
+</implementation:connectorImplementation>
