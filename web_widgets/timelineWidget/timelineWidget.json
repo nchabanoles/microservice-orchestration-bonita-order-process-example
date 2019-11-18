@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.4.18",
   "id" : "timelineWidget",
   "name" : "TIMELINE",
-  "lastUpdate" : 1573216120613,
+  "lastUpdate" : 1574079469012,
   "template" : "@timelineWidget.tpl.html",
   "controller" : "@timelineWidget.ctrl.js",
   "custom" : true,
