@@ -222,7 +222,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_8eHseweYEeqAFtgYomijKg" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_EgPIkweZEeqAFtgYomijKg" type="3012" element="_EgOhgAeZEeqAFtgYomijKg" fontName="Cantarell">
               <children xmi:type="notation:DecorationNode" xmi:id="_EgPvoAeZEeqAFtgYomijKg" type="5029">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_EgPvoQeZEeqAFtgYomijKg" y="5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_EgPvoQeZEeqAFtgYomijKg" x="-1" y="27"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EgPIlAeZEeqAFtgYomijKg" x="60" y="68" width="30" height="30"/>
             </children>
@@ -232,7 +232,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_igda8AeZEeqAFtgYomijKg" type="3062" element="_igcz4AeZEeqAFtgYomijKg" fontName="Cantarell">
               <children xmi:type="notation:DecorationNode" xmi:id="_igda8geZEeqAFtgYomijKg" type="5090">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_igda8weZEeqAFtgYomijKg" y="5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_igda8weZEeqAFtgYomijKg" x="-1" y="27"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igda8QeZEeqAFtgYomijKg" x="408" y="71"/>
             </children>
